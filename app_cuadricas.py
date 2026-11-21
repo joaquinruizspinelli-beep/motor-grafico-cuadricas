@@ -242,7 +242,7 @@ with col_ort:
     st.plotly_chart(fig_ort, use_container_width=True)
 
 with col_persp:
-   st.subheader(f"3. Proyección Perspectiva ($\mathbb{{R}}^2$, d={d})")
+    st.subheader(f"3. Proyección Perspectiva ($\mathbb{{R}}^2$, d={d})")
     fig_persp = go.Figure()
     if modo_visualizacion == "Malla Alámbrica (Wireframe)":
         for traza in crear_trazas_wireframe(X_persp, Y_persp, color="#dc2626", es_3d=False):
